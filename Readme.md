@@ -2,6 +2,7 @@
 
 - Студент: [Любовь Коничняк](https://up.htmlacademy.ru/htmlcss/40/user/2546567).
 - Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
+- Сайт: [Мой проект Седона](https://zaiaz0704.github.io/2546567-sedona-40/).
 
 ---
 
