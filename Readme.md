@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Любовь Коничняк](https://up.htmlacademy.ru/htmlcss/40/user/2546567).
-* Наставник: `Неизвестно`.
+- Студент: [Любовь Коничняк](https://up.htmlacademy.ru/htmlcss/40/user/2546567).
+- Наставник: [Николай Шабалин](https://htmlacademy.ru/profile/id1057153).
 
 ---
 
