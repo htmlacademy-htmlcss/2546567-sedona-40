@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>catalog</title>
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
-      <div>
+      <div class="page-header__navigation-container">
         <img
           class="logo"
           src="/images/logo-img.svg"
@@ -44,112 +45,131 @@
                 alt="избраное"
               />
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+            <li class="navigation-button-container">
+              <a class="navigation-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="options-title">
-        <h1 class="">Гостиницы Седоны</h1>
+      <section class="options">
+        <h1 class="options-title">Гостиницы Седоны</h1>
         <ul>
           <li>
             <img src="/images/home.svg" width="13" height="15" alt="дом" />
           </li>
-          <li>Гостиницы</li>
+          <li class="options-subtitle">Гостиницы</li>
         </ul>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <div>
-            <h4>Инфраструктура:</h4>
-            <ul>
-              <li>
+            <h4 class="filter-list-title">Инфраструктура:</h4>
+            <ul class="options-list">
+              <li class="options-item">
                 <input type="checkbox" name="pool" id="pool1" />
                 <label for="pool1">Бассейн</label>
               </li>
-              <li>
+              <li class="options-item">
                 <input type="checkbox" name="parking" id="parking1" />
                 <label for="parking1">Парковка</label>
               </li>
-              <li>
+              <li class="options-item">
                 <input type="checkbox" name="Wi-Fi" id="Wi-Fi1" />
                 <label for="Wi-Fi1">Wi-Fi</label>
               </li>
             </ul>
           </div>
           <div>
-            <h4>Тип Жилья:</h4>
+            <h4 class="filter-list-title">Тип Жилья:</h4>
 
-            <ul>
-              <li>
+            <ul class="options-list">
+              <li class="options-item">
                 <input type="radio" name="hotel" id="hotel1" />
                 <label for="hotel1">Гостиница</label>
               </li>
-              <li>
+              <li class="options-item">
                 <input type="radio" name="hotel" id="motel1" />
                 <label for="motel1">Мотель</label>
               </li>
-              <li>
+              <li class="options-item">
                 <input type="radio" name="hotel" id="apartments1" />
                 <label for="apartments1">Апартаменты</label>
               </li>
             </ul>
           </div>
           <div>
-            <h4>Стоимость, ₽:</h4>
-            <input type="number" placeholder="от" value="0" name="from" />
-            <input type="number" placeholder="до" value="9000" name="to" />
+            <h4 class="filter-list-title">Стоимость, ₽:</h4>
+            <input
+              class="filter-number-input"
+              type="number"
+              placeholder="от"
+              value="0"
+              name="from"
+            />
+            <input
+              class="filter-number-input"
+              type="number"
+              placeholder="до"
+              value="9000"
+              name="to"
+            />
             <input type="range" />
           </div>
           <div>
-            <button type="submit">применить</button>
-            <button type="reset">сбросить</button>
+            <button class="submit" type="submit">применить</button>
+            <button class="reset" type="reset">сбросить</button>
           </div>
         </form>
       </section>
 
-      <section>
-        <div>
-          <h2>Найдено гостиниц: 38</h2>
-          <select name="select-filtr">
-            <option value="vale1" selected>самые дешевые</option>
-            <option value="vale2">самые дорогие</option>
-            <option value="value3">самые популярные</option>
+      <section class="search">
+        <div class="search__filter">
+          <h2 class="search__filter-title">Найдено гостиниц: 38</h2>
+          <select class="search__filter-select" name="select-filter">
+            <option class="search__filter-option" value="vale1" selected>
+              самые дешевые
+            </option>
+            <option class="search__filter-option" value="vale2">
+              самые дорогие
+            </option>
+            <option class="search__filter-option" value="value3">
+              самые популярные
+            </option>
           </select>
-          <ul>
-            <li>
+          <ul class="search__filter-list">
+            <li class="search__filter-item">
               <button type="button"></button>
             </li>
-            <li>
+            <li class="search__filter-item">
               <button type="button"></button>
             </li>
-            <li>
+            <li class="search__filter-item">
               <button type="button"></button>
             </li>
           </ul>
         </div>
-        <ul>
-          <li>
+        <ul class="search__list">
+          <li class="search__item">
             <img
+              class="search__item-img"
               src="/images/hotel-1.png"
               width="300"
               height="212"
               alt="горы"
             />
-            <h3>Amara Resort & Spa</h3>
+            <h3 class="search__item-title">Amara Resort & Spa</h3>
 
-            <div>
+            <div class="search__item-prays">
               <p>Гостиница</p>
               <p>От 4000 ₽</p>
             </div>
-            <div>
-              <button type="button">ПОДРОБНЕЕ</button>
-              <button type="button">В ИЗБРАНОЕ</button>
+            <div class="search__item-buttons">
+              <button class="search__item-button" type="button">ПОДРОБНЕЕ</button>
+              <button class="search__item-button search__item-button--blue" type="button">В ИЗБРАНОЕ</button>
             </div>
-            <div>
-              <ul>
-                <li>
+            <div class="search__item-rating-container">
+              <ul class="search__item-stars-list">
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -157,7 +177,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -165,7 +185,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -173,7 +193,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -181,37 +201,33 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img src="#" alt="star" />
                 </li>
               </ul>
-              <div>
-                <p>Рейтинг: 8,5</p>
+              <div class="search__item-rating">
+                <button class="search__item-button search__item-button--grey" type="button">Рейтинг: 8,5</button>
               </div>
             </div>
           </li>
 
-          <li>
-            <img
-              src="/images/hotel-2.png"
-              width="300"
-              height="212"
-              alt="горы"
-            />
+          <li class="search__item">
+            <img class="search__item-img" />
+            src="/images/hotel-2.png" width="300" height="212" alt="горы" />
             <p>От 5000 ₽</p>
-            <h3>Villas at Poco Diablo</h3>
+            <h3 class="search__item-title"></h3>>Villas at Poco Diablo</h3>
 
-            <div>
+            <div class="search__item-prays">
               <p>Гостиница</p>
               <p>От 5000 ₽</p>
             </div>
-            <div>
-              <button type="button">ПОДРОБНЕЕ</button>
-              <button type="button">В ИЗБРАНОЕ</button>
+            <div class="search__item-buttons">
+              <button class="search__item-button" type="button">ПОДРОБНЕЕ</button>
+              <button class="search__item-button search__item-button--green" type="button">В ИЗБРАНОЕ</button>
             </div>
-            <div>
-              <ul>
-                <li>
+            <div class="search__item-rating-container">
+              <ul  class="search__item-stars-list">
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -219,7 +235,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -227,7 +243,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -235,7 +251,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -243,38 +259,34 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img src="#" alt="star" />
                 </li>
               </ul>
 
-              <div>
-                <p>Рейтинг: 9,2</p>
+              <div class="search__item-rating">
+                <button class="search__item-button search__item-button--grey" type="button">Рейтинг: 9,2</button>
               </div>
             </div>
           </li>
 
-          <li>
-            <img
-              src="/images/hotel-3.png"
-              width="300"
-              height="212"
-              alt="горы"
-            />
+          <li class="search__item">
+            <img class="search__item-img" />
+            src="/images/hotel-3.png" width="300" height="212" alt="горы" />
             <p>От 5000 ₽</p>
-            <h3>Desert Quail Inn</h3>
+            <h3 class="search__item-title"></h3>>Desert Quail Inn</h3>
 
-            <div>
+            <div class="search__item-prays">
               <p>Гостиница</p>
               <p>От 2500 ₽</p>
             </div>
-            <div>
-              <button type="button">ПОДРОБНЕЕ</button>
-              <button type="button">В ИЗБРАНОЕ</button>
+            <div class="search__item-buttons">
+              <button class="search__item-button" type="button">ПОДРОБНЕЕ</button>
+              <button class="search__item-button search__item-button--blue" type="button">В ИЗБРАНОЕ</button>
             </div>
-            <div>
-              <ul>
-                <li>
+            <div class="search__item-rating-container">
+              <ul  class="search__item-stars-list">
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -282,7 +294,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -290,7 +302,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -298,41 +310,37 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img src="#" alt="star" />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img src="#" alt="star" />
                 </li>
               </ul>
 
-              <div>
-                <p>Рейтинг: 6,9</p>
+              <div class="search__item-rating">
+                <button class="search__item-button search__item-button--grey" type="button">Рейтинг: 6,9</button>
               </div>
             </div>
           </li>
 
-          <li>
-            <img
-              src="/images/hotel-4.png"
-              width="300"
-              height="212"
-              alt="горы"
-            />
+          <li class="search__item">
+            <img class="search__item-img" />
+            src="/images/hotel-4.png" width="300" height="212" alt="горы" />
             <p>От 1500 ₽</p>
-            <h3>GreenTree Inn</h3>
+            <h3 class="search__item-title"></h3>>GreenTree Inn</h3>
 
-            <div>
+            <div class="search__item-prays">
               <p>Гостиница</p>
               <p>От 5000 ₽</p>
             </div>
-            <div>
-              <button type="button">ПОДРОБНЕЕ</button>
-              <button type="button">В ИЗБРАНОЕ</button>
+            <div class="search__item-buttons">
+              <button class="search__item-button" type="button">ПОДРОБНЕЕ</button>
+              <button class="search__item-button search__item-button--blue" type="button">В ИЗБРАНОЕ</button>
             </div>
-            <div>
-              <ul>
-                <li>
+            <div class="search__item-rating-container">
+              <ul  class="search__item-stars-list">
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -340,7 +348,7 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img
                     src="/images/star.svg"
                     width="18"
@@ -348,42 +356,43 @@
                     alt="star"
                   />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
+
                   <img src="#" alt="star" />
                 </li>
                 <li>
                   <img src="#" alt="star" />
                 </li>
-                <li>
+                <li class="search__item-stars-item">
                   <img src="#" alt="star" />
                 </li>
               </ul>
 
-              <div>
-                <p>Рейтинг: 5,0</p>
+              <div class="search__item-rating">
+                <button class="search__item-button search__item-button--grey" type="button">Рейтинг: 5,0</button>
               </div>
             </div>
           </li>
         </ul>
-        <div>
-          <ul>
-            <li>
-              <button type="button">1</button>
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <button class="pagination__item-number pagination__item-number--grey" type="button">1</button>
             </li>
-            <li>
-              <button type="button">2</button>
+            <li class="pagination__item">
+              <button class="pagination__item-number" type="button">2</button>
             </li>
-            <li>
-              <button type="button">3</button>
+            <li class="pagination__item">
+              <button class="pagination__item-number" type="button">3</button>
             </li>
-            <li>
-              <button type="button">4</button>
+            <li class="pagination__item">
+              <button class="pagination__item-number" type="button">4</button>
             </li>
-            <li>
-              <button type="button">...</button>
+            <li class="pagination__item">
+              <button class="pagination__item-number pagination__item-number--white " type="button">...</button>
             </li>
-            <li>
-              <button type="button">10</button>
+            <li class="pagination__item">
+              <button class="pagination__item-number" type="button">10</button>
             </li>
           </ul>
         </div>
@@ -395,11 +404,13 @@
         </p>
         <form method="post" action="https://echo.htmlacademy.ru/">
           <input name="email" type="text" placeholder="ваш емейл" />
-          <button type="submit">Подписаться</button>
+          <button type="submit" class="subscription-submit-button">
+            Подписаться
+          </button>
         </form>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <ul>
         <li>
           <img src="/images/Social-VK.svg" width="24" height="14" alt="ВК" />
@@ -421,7 +432,7 @@
           />
         </li>
       </ul>
-      <p>+7 (812) 812-12-12</p>
+      <p class="footer-tel">+7 (812) 812-12-12</p>
       <img src="/images/Logo-text.svg" width="115" height="33" alt="Логотип" />
     </footer>
   </body>

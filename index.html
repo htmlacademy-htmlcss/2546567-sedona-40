@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Седона</title>
   </head>
-  <body>
+  <body class="body">
     <header class="page-header">
-      <div>
+      <div class="page-header__navigation-container">
         <img
           class="logo"
           src="/images/logo-img.svg"
@@ -18,7 +19,7 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="about.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">О Седоне</a>
@@ -44,23 +45,29 @@
                 alt="избраное"
               />
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда</a>
+            <li class="navigation-button-container">
+              <a class="navigation-button" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </div>
-      <img src="/images/slider.jpg" width="1200" height="485" alt="слайдер" />
+      <img
+        class="slider"
+        src="/images/slider.jpg"
+        width="1200"
+        height="485"
+        alt="слайдер"
+      />
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
 
       <section class="advantages">
-        <div>
-          <h2>
+        <div class="section-title-container">
+          <h2 class="advantages-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего !
           </h2>
-          <h3 class="advantages-title">
+          <h3 class="advantages-subtitle">
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </h3>
         </div>
@@ -118,8 +125,10 @@
       </section>
       <section class="services">
         <div>
-          <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
-          <h3 class="advantages-title">
+          <h2 class="services-title">
+            Приезжайте в Седону отдохнуть в комфорте и уюте!
+          </h2>
+          <h3 class="services-subtitle">
             Опытный персонал и качественное обслуживание!
           </h3>
         </div>
@@ -162,19 +171,20 @@
           <a class="subscription-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </div>
         <div>
-          <h2 class="subscription-title">Заинтересовались?</h2>
+          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
           <p class="subscription-text">
-            Укажите предполагаемые даты поездки,и мы покажем вам лучшие
-            предложения гостиниц в Седоне
+            Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form method="post" action="https://echo.htmlacademy.ru/">
             <input name="email" type="text" placeholder="ваш емейл" />
-            <button type="submit">Подписаться</button>
+            <button type="submit" class="subscription-submit-button">
+              Подписаться
+            </button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <ul>
         <li>
           <img src="/images/Social-VK.svg" width="24" height="14" alt="ВК" />
@@ -196,7 +206,7 @@
           />
         </li>
       </ul>
-      <p>+7 (812) 812-12-12</p>
+      <p class="footer-tel">+7 (812) 812-12-12</p>
       <img src="/images/Logo-text.svg" width="115" height="33" alt="Логотип" />
     </footer>
   </body>

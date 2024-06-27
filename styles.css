@@ -1,0 +1,460 @@
+@font-face {
+  font-family: "PT sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/ptsans-400.woff2") format("woff2"),
+    url("fonts/ptsans-400.woff2") format("woff");
+}
+
+@font-face {
+  font-family: "PT sans";
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+  src: url("fonts/ptsans-700.woff2") format("woff2"),
+    url("fonts/ptsans-700.woff2") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+}
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+.page-header__navigation-container {
+  /*border: 1px solid rgb(255, 0, 132);*/
+  display: flex;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  height: 64px;
+  overflow: visible;
+  z-index: 1;
+}
+.navigation-button-container {
+  padding: 8px 34px;
+  background-color: #756157;
+}
+.navigation-button {
+  /* Кнопка */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.slider {
+  /*border: 1px solid rgb(255, 0, 132);*/
+}
+.navigation {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+.logo {
+  margin-right: 28px;
+}
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+.navigation-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.main-index {
+  border: 1px solid rgb(206, 27, 182);
+  width: 100%;
+}
+
+.advantages {
+  border: 1px solid rgb(30, 241, 150);
+  width: 100%;
+}
+.section-title-container {
+  border: 1px solid rgb(171, 53, 238);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.advantages-title {
+  width: 620px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* Седона — небольшой городок в Аризоне, заслуживающий большего! */
+  text-transform: uppercase;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+.advantages-subtitle {
+  width: 651px;
+  display: flex;
+  justify-content: center;
+  /* Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон! */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.advantages-list {
+  border: 1px solid rgb(171, 53, 238);
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: 0;
+}
+.advantages-item {
+  border: 1px solid rgb(230, 171, 11);
+  display: flex;
+}
+.advantages-description {
+  border: 1px solid rgb(1, 15, 57);
+  background-color: #82b3d3;
+  height: 385px;
+  width: 400px;
+}
+.advantages-name {
+  /* Настоящий городок */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.advantages-text {
+  /* Седона — не аттракцион для туристов, там течёт своя жизнь */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.services-title {
+  /* Приезжайте в Седону отдохнуть в комфорте и уюте! */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.services-subtitle {
+  /* Опытный персонал и качественное обслуживание! */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.services-name {
+  /* Жильё */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.services-text {
+  /* Рекомендуем пожитьв настоящем мотеле,
+всё как в кино! */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+.subscription-title {
+  /* Заинтересовались? */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.subscription-link {
+  /* ПОИСК ГОСТИНИЦЫ В седоне */
+  padding: 8px 50px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+}
+.subscription-submit-button {
+  /* Подписаться */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: none;
+}
+.footer {
+  width: 100%;
+}
+.footer-tel {
+  /* +7 (812) 812-12-12 */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+
+  color: #000000;
+}
+.options {
+  background-image: url("/images/filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.options-title {
+  /* Гостиницы Седоны */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
+.options-subtitle {
+  /* Гостиницы */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.filter-list-title {
+  /* Инфраструктура: */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+}
+.options-item {
+  /* Бассейн */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #ffffff;
+}
+.filter-number-input {
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.submit {
+  /* Кнопка */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82b3d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+.reset {
+  /* Кнопка */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+}
+.search__filter-title {
+  /* Найдено гостиниц: 38 */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+}
+.search__filter-option {
+  /* Сначала дешевые */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+}
+.search__item-img {
+  /* Amara Resort & Spa */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+.search__item-prays {
+  /* Гостиница */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #333333;
+}
+
+.search__item-button {
+  /* Кнопка */
+  padding: 8px 26px;
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #756157;
+  border: 0;
+}
+
+/*модификаторы*/
+.search__item-button--blue {
+  background-color: #82b3d3;
+}
+.search__item-button--green {
+  background-color: #7db54f;
+}
+.search__item-button--grey {
+  background-color: #f2f2f2;
+  color: #333333;
+  font-weight: 400;
+}
+.pagination__item-number {
+  /* 1 */
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+
+  color: #ffffff;
+  background-color: #82b3d3;
+  border: 0;
+}
+
+.pagination__item-number--grey {
+  background-color: #f2f2f2;
+  color: #000000;
+}
+.pagination__item-number--white {
+  background-color: #ffffff;
+  color: #000000;
+}
