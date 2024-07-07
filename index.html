@@ -28,17 +28,19 @@
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
+          <ul class="sub-navigation-list">
+            <li class="sub-navigation-item">
               <img
+                class="sub-navigation-item__img"
                 src="/images/search.svg"
                 width="20"
                 height="20"
                 alt="поиск"
               />
             </li>
-            <li class="navigation-item">
+            <li class="sub-navigation-item sub-navigation-item--heart">
               <img
+                class="sub-navigation-item__img"
                 src="/images/heart.svg"
                 width="20"
                 height="20"
@@ -84,7 +86,7 @@
           </li>
 
           <li class="advantages-item">
-            <div class="advantages-description">
+            <div class="advantages-description advantages-description--white">
               <h4 class="advantages-name">Небольшая площадь</h4>
               <p class="advantages-text">
                 Все достопримечательности находятся очень близко
@@ -92,7 +94,9 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-description">
+            <div
+              class="advantages-description advantages-description--light-blue"
+            >
               <h4 class="advantages-name">Красивая дорога</h4>
               <p class="advantages-text">
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
@@ -100,7 +104,7 @@
             </div>
           </li>
           <li class="advantages-item">
-            <div class="advantages-description">
+            <div class="advantages-description advantages-description--white">
               <h4 class="advantages-name">Мало туристов</h4>
               <p class="advantages-text">
                 Большинство едет в Гранд Каньон и толпится там
@@ -124,7 +128,7 @@
         </ul>
       </section>
       <section class="services">
-        <div>
+        <div class="services-list-title">
           <h2 class="services-title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </h2>
@@ -132,16 +136,24 @@
             Опытный персонал и качественное обслуживание!
           </h3>
         </div>
-        <ul>
-          <li class="services-item">
-            <img src="/images/house.svg" width="75" height="72" alt="дом" />
-            <h4 class="services-name">Жильё</h4>
-            <p class="services-text">
-              Рекомендуем пожить в настоящем мотеле, всё как в кино!
-            </p>
-          </li>
+        <ul class="services-list">
           <li class="services-item">
             <img
+              class="services-item-img"
+              src="/images/house.svg"
+              width="75"
+              height="72"
+              alt="дом"
+            />
+            <h4 class="services-name">Жильё</h4>
+            <p class="services-text">
+              Рекомендуем пожить<br />в настоящем мотеле,<br />
+              всё как в кино!
+            </p>
+          </li>
+          <li class="services-item services-item--white">
+            <img
+              class="services-item-img"
               src="/images/hamburger.svg"
               width="75"
               height="72"
@@ -149,34 +161,54 @@
             />
             <h4 class="services-name">еда</h4>
             <p class="services-text">
-              Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              Всегда заказывайте <br />
+              топовый фирменный бургер,<br />
+              вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
-            <img src="/images/box.svg" width="75" height="72" alt="коробка" />
+            <img
+              class="services-item-img"
+              src="/images/box.svg"
+              width="75"
+              height="72"
+              alt="коробка"
+            />
             <h4 class="services-name">Сувениры</h4>
             <p class="services-text">
-              Не только китайского, но и настоящего местного производства!
+              Не только китайского,<br />
+              но и настоящего местного <br />
+              производства!
             </p>
           </li>
         </ul>
       </section>
       <section class="subscription">
-        <div>
+        <div class="subscription-top-container">
           <h2 class="subscription-title">Заинтересовались?</h2>
           <p class="subscription-text">
-            Укажите предполагаемые даты поездки,и мы покажем вам лучшие
+            Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие
             предложения гостиниц в Седоне
           </p>
           <a class="subscription-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </div>
-        <div>
-          <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-          <p class="subscription-text">
-            Только полезная информация и никакого спама, честное бойскаутское!
+        <div class="subscription-bottom-container">
+          <h2 class="subscription-podtitle">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+          <p class="subscription-podtext">
+            Только полезная информация и никакого спама,<br />
+            честное бойскаутское!
           </p>
-          <form method="post" action="https://echo.htmlacademy.ru/">
-            <input name="email" type="text" placeholder="ваш емейл" />
+          <form
+            class="subscription__form"
+            method="post"
+            action="https://echo.htmlacademy.ru/"
+          >
+            <input
+              class="subscription__email"
+              name="email"
+              type="text"
+              placeholder="Ваш e-mail"
+            />
             <button type="submit" class="subscription-submit-button">
               Подписаться
             </button>
@@ -185,11 +217,11 @@
       </section>
     </main>
     <footer class="footer">
-      <ul>
-        <li>
+      <ul class="footer-social">
+        <li class="footer-social-item">
           <img src="/images/Social-VK.svg" width="24" height="14" alt="ВК" />
         </li>
-        <li>
+        <li class="footer-social-item">
           <img
             src="/images/Social-telegramm.svg"
             width="18"
@@ -197,7 +229,7 @@
             alt="телеграм"
           />
         </li>
-        <li>
+        <li class="footer-social-item">
           <img
             src="/images/Social-yutub.svg"
             width="22"
@@ -207,7 +239,14 @@
         </li>
       </ul>
       <p class="footer-tel">+7 (812) 812-12-12</p>
-      <img src="/images/Logo-text.svg" width="115" height="33" alt="Логотип" />
+      <div class="footer-logo">
+        <img
+          src="/images/Logo-text.svg"
+          width="115"
+          height="33"
+          alt="Логотип"
+        />
+      </div>
     </footer>
   </body>
 </html>
