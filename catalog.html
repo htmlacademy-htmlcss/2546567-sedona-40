@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="favicon.ico" sizes="32*32" />
     <title>catalog</title>
   </head>
   <body class="body">
@@ -25,6 +26,7 @@
               <a class="navigation-link" href="catalog.html">О Седоне</a>
             </li>
             <li class="navigation-item">
+              <div class="navigation-item-active-line"></div>
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
@@ -58,7 +60,7 @@
       <section class="options">
         <h1 class="options-title">Гостиницы Седоны</h1>
         <ul class="options-breadcrambs">
-          <li>
+          <li class="options-breadcrambs-item">
             <img
               class="options-subtitle-house"
               src="/images/home.svg"
@@ -78,16 +80,33 @@
             <h4 class="filter-list-title">Инфраструктура:</h4>
             <ul class="options-list">
               <li class="options-item">
-                <input type="checkbox" name="pool" id="pool1" />
-                <label for="pool1">Бассейн</label>
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="bass"
+                  id="checkbox_1"
+                  checked
+                />
+
+                <label class="checkbox_label" for="checkbox_1">Бассейн</label>
               </li>
               <li class="options-item">
-                <input type="checkbox" name="parking" id="parking1" />
-                <label for="parking1">Парковка</label>
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="parking"
+                  id="checkbox_2"
+                />
+                <label class="checkbox_label" for="checkbox_2">Парковка</label>
               </li>
               <li class="options-item">
-                <input type="checkbox" name="Wi-Fi" id="Wi-Fi1" />
-                <label for="Wi-Fi1">Wi-Fi</label>
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  name="Wi-Fi"
+                  id="checkbox_3"
+                />
+                <label class="checkbox_label" for="checkbox_3">Wi-Fi</label>
               </li>
             </ul>
           </div>
@@ -96,36 +115,56 @@
 
             <ul class="options-list">
               <li class="options-item">
-                <input type="radio" name="hotel" id="hotel1" />
-                <label for="hotel1">Гостиница</label>
+                <input
+                  class="radio_input"
+                  type="radio"
+                  name="hotel"
+                  id="radio_1"
+                  checked
+                />
+                <label class="radio_label" for="radio_1">Гостиница</label>
               </li>
               <li class="options-item">
-                <input type="radio" name="hotel" id="motel1" />
-                <label for="motel1">Мотель</label>
+                <input
+                  class="radio_input"
+                  type="radio"
+                  name="hotel"
+                  id="radio_2"
+                />
+                <label class="radio_label" for="radio_2">Мотель</label>
               </li>
               <li class="options-item">
-                <input type="radio" name="hotel" id="apartments1" />
-                <label for="apartments1">Апартаменты</label>
+                <input
+                  class="radio_input"
+                  type="radio"
+                  name="hotel"
+                  id="radio_3"
+                />
+                <label class="radio_label" for="radio_3">Апартаменты</label>
               </li>
             </ul>
           </div>
           <div class="options-filter3">
             <h4 class="filter-list-title">Стоимость, ₽:</h4>
-            <input
-              class="filter-number-input"
-              type="number"
-              placeholder="от"
-              value="0"
-              name="from"
-            />
-            <input
-              class="filter-number-input"
-              type="number"
-              placeholder="до"
-              value="9000"
-              name="to"
-            />
-            <input class="options-range" type="range" />
+            <div class="filter-number-input-wrapper-1">
+              <input
+                class="filter-number-input"
+                type="number"
+                value="0"
+                name="from"
+              />
+            </div>
+            <div class="filter-number-input-wrapper-2">
+              <input
+                class="filter-number-input"
+                type="number"
+                value="9000"
+                name="to"
+              />
+            </div>
+            <div class="options-range-wrapper">
+              <input class="options-range" type="range" value="78" />
+            </div>
           </div>
           <div class="options-filter4">
             <button class="submit" type="submit">применить</button>
@@ -137,13 +176,17 @@
       <section class="search">
         <div class="search__filter">
           <h2 class="search__filter-title">Найдено гостиниц: 38</h2>
-          <select class="search__filter-select" name="select-filter">
-            <option value="vale1" selected>Сначала дешевые</option>
-            <option value="vale2">самые дорогие</option>
-            <option value="value3">самые популярные</option>
-          </select>
+          <div class="search__filter-select-wrapper">
+            <select class="search__filter-select" name="select-filter">
+              <option class="search-botton" value="vale1" selected>
+                Сначала дешевые
+              </option>
+              <option value="vale2">самые дорогие</option>
+              <option value="value3">самые популярные</option>
+            </select>
+          </div>
           <ul class="search__filter-list">
-            <li class="search__filter-item">
+            <li class="search__filter-item search__filter-item--active">
               <button
                 class="search__filter-item-button search__filter-item-button--3"
                 type="button"
@@ -520,34 +563,34 @@
     </main>
     <footer class="footer">
       <ul class="footer-social">
-        <li class="footer-social-item">
-          <img src="/images/Social-VK.svg" width="24" height="14" alt="ВК" />
+        <li class="footer-social-item" tabindex="0">
+          <!--<img src="/images/Social-VK.svg" width="24" height="14" alt="ВК" />-->
         </li>
-        <li class="footer-social-item">
-          <img
+        <li class="footer-social-item-2" tabindex="0">
+          <!--<img
             src="/images/Social-telegramm.svg"
             width="18"
             height="16"
             alt="телеграм"
-          />
+          />-->
         </li>
-        <li class="footer-social-item">
-          <img
+        <li class="footer-social-item-3" tabindex="0">
+          <!--<img
             src="/images/Social-yutub.svg"
             width="22"
             height="17"
             alt="ютуб"
-          />
+          />-->
         </li>
       </ul>
-      <p class="footer-tel">+7 (812) 812-12-12</p>
-      <div class="footer-logo">
-        <img
+      <p class="footer-tel" tabindex="0">+7 (812) 812-12-12</p>
+      <div class="footer-logo" tabindex="0">
+        <!--<img
           src="/images/Logo-text.svg"
           width="115"
           height="33"
           alt="Логотип"
-        />
+        />-->
       </div>
     </footer>
   </body>
