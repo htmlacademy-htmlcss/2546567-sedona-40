@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
     <title>Седона</title>
-    <link rel="icon" href="favicon.ico" sizes="32*32" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
   </head>
   <body class="body">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="page-header__navigation-container">
         <img
           class="logo"
@@ -50,7 +50,7 @@
               />
             </li>
             <li class="navigation-button-container">
-              <button class="navigation-button" href="#">Хочу сюда!</button>
+              <button class="navigation-button">Хочу сюда!</button>
             </li>
           </ul>
         </nav>
@@ -61,12 +61,13 @@
         width="1200"
         height="485"
         alt="слайдер"
+        data-test="hero"
       />
     </header>
     <main class="main-index">
       <h1 class="visually-hidden">Седона</h1>
 
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <div class="section-title-container">
           <h2 class="advantages-title">
             Седона — небольшой городок в Аризоне, заслуживающий большего !
@@ -134,7 +135,7 @@
           </li>
         </ul>
       </section>
-      <section class="services">
+      <section class="services" data-test="service">
         <div class="services-list-title">
           <h2 class="services-title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -190,7 +191,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscription">
+      <section class="subscription" data-test="search">
         <div class="subscription-top-container">
           <h2 class="subscription-title">Заинтересовались?</h2>
           <p class="subscription-text">
@@ -232,8 +233,9 @@
       <p class="footer-tel" tabindex="0">+7 (812) 812-12-12</p>
       <div class="footer-logo" tabindex="0"></div>
     </footer>
+
     <div class="modal-container modal--close">
-      <div class="modal">
+      <div class="modal" data-test="modal">
         <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>

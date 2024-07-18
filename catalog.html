@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
-    <link rel="icon" href="favicon.ico" sizes="32*32" />
+    <link rel="icon" href="favicon.ico" sizes="32x32" />
     <title>catalog</title>
   </head>
   <body class="body">
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <div class="page-header__navigation-container">
         <img
           class="logo"
@@ -50,14 +50,14 @@
               />
             </li>
             <li class="navigation-button-container">
-              <a class="navigation-button" href="#">Хочу сюда!</a>
+              <a class="navigation-button">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="options">
+      <section class="options" data-test="filter">
         <h1 class="options-title">Гостиницы Седоны</h1>
         <ul class="options-breadcrambs">
           <li class="options-breadcrambs-item">
@@ -173,7 +173,7 @@
         </form>
       </section>
 
-      <section class="search">
+      <section class="search" data-test="catalog">
         <div class="search__filter">
           <h2 class="search__filter-title">Найдено гостиниц: 38</h2>
           <div class="search__filter-select-wrapper">
@@ -538,7 +538,7 @@
           </ul>
         </div>
       </section>
-      <div class="subscription-catalog">
+      <div class="subscription-catalog" data-test="subscribe">
         <h2 class="subscription-title">Подпишитесь на рассылку</h2>
         <p class="subscription-text">
           Только полезная информация и никакого спама,<br />
@@ -561,7 +561,7 @@
         </form>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-test="footer">
       <ul class="footer-social">
         <li class="footer-social-item" tabindex="0"></li>
         <li class="footer-social-item-2" tabindex="0"></li>
@@ -572,7 +572,7 @@
     </footer>
 
     <div class="modal-container modal--close">
-      <div class="modal">
+      <div class="modal" data-test="modal">
         <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -640,5 +640,6 @@
           <button class="search-window" type="submit">НАЙТИ</button>
         </form>
       </div>
+    </div>
   </body>
 </html>
