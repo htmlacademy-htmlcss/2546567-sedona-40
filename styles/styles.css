@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'PT sans';
+  font-family: "PT sans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url('../fonts/ptsans-400.woff2') format('woff2'),
-    url('../fonts/ptsans-400.woff2') format('woff');
+  src: url("../fonts/ptsans-400.woff2") format("woff2"),
+    url("../fonts/ptsans-400.woff2") format("woff");
 }
 
 @font-face {
-  font-family: 'PT sans';
+  font-family: "PT sans";
   font-weight: 700;
   font-style: bold;
   font-display: swap;
-  src: url('../fonts/ptsans-700.woff2') format('woff2'),
-    url('../fonts/ptsans-700.woff2') format('woff');
+  src: url("../fonts/ptsans-700.woff2") format("woff2"),
+    url("../fonts/ptsans-700.woff2") format("woff");
 }
 
 * {
@@ -52,7 +52,7 @@ html {
   min-width: 100%;
   min-height: 100vh;
   margin: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
 }
 
@@ -93,7 +93,7 @@ html {
   width: 100%;
   height: 100%;
   padding: 8px 34px;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -164,7 +164,7 @@ html {
 
 .logo {
   position: absolute;
-  content: '';
+  content: "";
   left: 70px;
 }
 
@@ -181,7 +181,7 @@ html {
   height: 2px;
   background-color: #756257;
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 16px;
 }
@@ -207,19 +207,19 @@ html {
   justify-content: center;
   align-items: center;
 
-  background-image: url('../images/slider-bg.jpg');
+  background-image: url("../images/slider-bg.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .slider::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 0;
   left: 0;
   width: 100%;
   height: 57px;
-  background-image: url('../images/slider-mask.png');
+  background-image: url("../images/slider-mask.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -301,7 +301,7 @@ html {
 
 .advantages-description-line {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 195px;
   left: 170px;
   height: 2px;
@@ -311,7 +311,7 @@ html {
 
 .advantages-description-line2 {
   position: absolute;
-  content: '';
+  content: "";
   bottom: 185px;
   left: 170px;
   height: 2px;
@@ -443,7 +443,7 @@ html {
 }
 
 .subscription-submit-button {
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   width: 232px;
 
   font-style: normal;
@@ -478,7 +478,7 @@ html {
 .subscription-bottom-container {
   text-align: center;
   padding: 96px 258px 104px;
-  background-image: url('../images/Subscribe.jpg');
+  background-image: url("../images/Subscribe.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -550,7 +550,7 @@ html {
   position: relative;
   padding: 64px 70px;
   width: 717px;
-  height: 576px;
+  min-height: 576px;
   margin: auto;
   background-color: #ffffff;
   border-radius: 30px;
@@ -570,7 +570,7 @@ html {
   border-radius: 50%;
   background-color: rgb(242 242 242 / 100%);
   border: none;
-  background-image: url('../images/close.png');
+  background-image: url("../images/close.png");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -638,7 +638,7 @@ html {
   border: none;
   padding-left: 20px;
   outline: none;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -676,10 +676,10 @@ html {
   padding: 0;
   top: 15px;
   right: 20px;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
-  background-image: url('../images/date.png');
+  background-image: url("../images/date.png");
 }
 
 .search-form__input-wrapper::after {
@@ -691,19 +691,19 @@ html {
   top: 52px;
   left: 157px;
   width: 440px;
-  height: 21px;
+  min-height: 21px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   align-items: center;
   padding: 0;
-  content: 'Мы не можем отправить вас в прошлое.';
+  content: "Мы не можем отправить вас в прошлое.";
   color: rgb(255 87 87 / 100%);
 }
 
 .search-form__input-wrapper-color::after {
-  content: 'На эти даты есть свободные номера.Пока есть. ';
+  content: "На эти даты есть свободные номера.Пока есть. ";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -858,7 +858,7 @@ html {
   flex-wrap: wrap;
   align-items: center;
 
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -912,7 +912,7 @@ html {
 /* Стили для страницы Каталога =============================================================================== */
 
 .options {
-  background-image: url('../images/filter.jpg');
+  background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -971,13 +971,13 @@ html {
 
 .options-subtitle::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 5px;
   left: 0;
   /*inset: 5px 5.55px 5px 23.8px;*/
   width: 8px;
   height: 11px;
-  background-image: url('../images/breadcrumbs.svg');
+  background-image: url("../images/breadcrumbs.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1030,7 +1030,7 @@ html {
 
 .checkbox_label::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   display: block;
@@ -1042,7 +1042,7 @@ html {
 }
 
 .checkbox_input:checked + .checkbox_label::before {
-  background: url('../images/check.svg') no-repeat;
+  background: url("../images/check.svg") no-repeat;
   background-size: 20px;
 }
 
@@ -1065,7 +1065,7 @@ html {
 
 .radio_label::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   display: block;
@@ -1078,7 +1078,7 @@ html {
 }
 
 .radio_input:checked + .radio_label::before {
-  background: url('../images/radio.svg') no-repeat;
+  background: url("../images/radio.svg") no-repeat;
   background-size: 10px;
   background-position: center;
   background-color: #ffffff;
@@ -1121,7 +1121,7 @@ html {
 
 .filter-number-input-wrapper-1::before {
   position: absolute;
-  content: 'от';
+  content: "от";
   top: calc(50% - 20px);
   right: 3px;
   display: flex;
@@ -1148,7 +1148,7 @@ html {
 
 .filter-number-input-wrapper-2::before {
   position: absolute;
-  content: 'до';
+  content: "до";
   top: calc(50% - 20px);
   right: 6px;
   display: flex;
@@ -1190,7 +1190,7 @@ html {
   min-height: 36px;
   margin-top: 55px;
   margin-bottom: 35px;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1226,7 +1226,7 @@ html {
   justify-content: center;
   width: 191px;
   min-height: 36px;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -1286,7 +1286,7 @@ html {
   height: 100%;
   font-style: normal;
 
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -1346,7 +1346,7 @@ html {
   border: none;
   outline: none;
   background-color: #ffffff;
-  background-image: url('../images/burger-1.svg');
+  background-image: url("../images/burger-1.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1369,7 +1369,7 @@ html {
   background-color: #756157;
   border: 0;
   cursor: pointer;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
 }
 
 .search__item-button:hover {
@@ -1468,7 +1468,7 @@ html {
   border-radius: 4px;
   cursor: pointer;
 
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1518,7 +1518,7 @@ html {
   border: none;
   outline: none;
   background-color: rgba(242, 242, 242, 1);
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1559,22 +1559,22 @@ html {
   height: 40px;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/Social-VK.svg');
+  background-image: url("../images/Social-VK.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
 .footer-social-item:hover {
-  background-image: url('../images/vk2.png');
+  background-image: url("../images/vk2.png");
 }
 
 .footer-social-item:focus {
-  background-image: url('../images/vk2.png');
+  background-image: url("../images/vk2.png");
 }
 
 .footer-social-item:active {
-  background-image: url('../images/vk2.png');
+  background-image: url("../images/vk2.png");
   opacity: 0.6;
 }
 
@@ -1584,22 +1584,22 @@ html {
   height: 40px;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/Social-telegramm.svg');
+  background-image: url("../images/Social-telegramm.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
 .footer-social-item-2:hover {
-  background-image: url('../images/telegramm2.png');
+  background-image: url("../images/telegramm2.png");
 }
 
 .footer-social-item-2:focus {
-  background-image: url('../images/telegramm2.png');
+  background-image: url("../images/telegramm2.png");
 }
 
 .footer-social-item-2:active {
-  background-image: url('../images/telegramm2.png');
+  background-image: url("../images/telegramm2.png");
   opacity: 0.6;
 }
 
@@ -1609,22 +1609,22 @@ html {
   height: 40px;
   justify-content: center;
   align-items: center;
-  background-image: url('../images/Social-yutub.svg');
+  background-image: url("../images/Social-yutub.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
 }
 
 .footer-social-item-3:hover {
-  background-image: url('../images/yutub2.png');
+  background-image: url("../images/yutub2.png");
 }
 
 .footer-social-item-3:focus {
-  background-image: url('../images/yutub2.png');
+  background-image: url("../images/yutub2.png");
 }
 
 .footer-social-item-3:active {
-  background-image: url('../images/2.png');
+  background-image: url("../images/2.png");
   opacity: 0.6;
 }
 
@@ -1668,26 +1668,26 @@ html {
   justify-content: flex-end;
   align-items: flex-start;
   cursor: pointer;
-  background-image: url('../images/Logo-text.svg');
+  background-image: url("../images/Logo-text.svg");
   background-repeat: no-repeat;
   background-position: right;
 }
 
 .footer-logo:hover {
-  background-image: url('../images/Logo-text2.svg');
+  background-image: url("../images/Logo-text2.svg");
 }
 
 .footer-logo:active {
-  background-image: url('../images/Logo-text2.svg');
+  background-image: url("../images/Logo-text2.svg");
   opacity: 0.6;
 }
 
 .footer-logo:disabled {
-  background-image: url('../images/Logo-text2.svg');
+  background-image: url("../images/Logo-text2.svg");
 }
 
 .footer-logo:focus {
-  background-image: url('../images/Logo-text2.svg');
+  background-image: url("../images/Logo-text2.svg");
 }
 
 /* модификаторы */
@@ -1808,7 +1808,7 @@ html {
   position: absolute;
   top: -10px;
   right: 4px;
-  content: '12';
+  content: "12";
   width: 20px;
   height: 20px;
   background-color: #7db54f;
@@ -1840,11 +1840,11 @@ html {
 }
 
 .search__filter-item-button--2 {
-  background-image: url('../images/burger-2.svg');
+  background-image: url("../images/burger-2.svg");
 }
 
 .search__filter-item-button--3 {
-  background-image: url('../images/burger-3.svg');
+  background-image: url("../images/burger-3.svg");
 }
 
 .search__item-stars-item--hidden {
@@ -1866,7 +1866,7 @@ html {
   position: absolute;
   top: -6px;
   left: 0;
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   background: #ffffff;
@@ -1878,13 +1878,13 @@ html {
   position: absolute;
   top: 2px;
   right: 0;
-  content: '';
+  content: "";
   width: 60px;
   height: 4px;
   background: #808080;
 }
 
-input[type='range'] {
+input[type="range"] {
   appearance: none;
   width: 300px;
   height: 4px;
@@ -1892,7 +1892,7 @@ input[type='range'] {
   outline: none;
 }
 
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 20px;
   height: 20px;
