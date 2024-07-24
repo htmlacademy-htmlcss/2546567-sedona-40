@@ -13,7 +13,7 @@
   <div class="wrapper-container">
     <header class="page-header" data-test="header">
       <div class="page-header-navigation-container">
-        <a href="https://htmlacademy.ru/">
+        <a href="index.html">
           <img class="logo" src="images/logo-img.svg" width="140" height="70" alt="Логотип Седона">
         </a>
         <nav class="navigation">
@@ -30,10 +30,12 @@
           </ul>
           <ul class="sub-navigation-list">
             <li class="sub-navigation-item">
-              <img class="sub-navigation-item__img" src="images/search.svg" width="20" height="20" alt="поиск">
+              <img class="sub-navigation-item__img" src="images/search.svg" width="20" height="20" alt="поиск"
+                tabindex="0">
             </li>
             <li class="sub-navigation-item sub-navigation-item--heart">
-              <img class="sub-navigation-item__img" src="images/heart.svg" width="20" height="20" alt="избранное">
+              <img class="sub-navigation-item__img" src="images/heart.svg" width="20" height="20" alt="избранное"
+                tabindex="0">
             </li>
             <li class="navigation-button-container">
               <a class="navigation-button" href="#">Хочу сюда!</a>
@@ -71,32 +73,27 @@
             <img src="images/view.png" width="800" height="385" alt="отель">
           </li>
 
-          <li class="advantages-item">
-            <div class="advantages-description advantages-description--white">
-              <h3 class="advantages-name">Небольшая площадь</h3>
-              <div class="advantages-description-line2"></div>
-              <p class="advantages-text">
-                Все достопримечательности находятся очень близко
-              </p>
-            </div>
+          <li class="advantages-item-small">
+            <h3 class="advantages-name">Небольшая площадь</h3>
+            <div class="advantages-description-line2"></div>
+            <p class="advantages-text">
+              Все достопримечательности находятся очень близко
+            </p>
           </li>
-          <li class="advantages-item">
-            <div class="advantages-description advantages-description--light-blue">
-              <h3 class="advantages-name">Красивая дорога</h3>
-              <div class="advantages-description-line2"></div>
-              <p class="advantages-text">
-                Ехать в Седону из Лас-Вегаса совсем не скучно!
-              </p>
-            </div>
+          <li class="advantages-item-small">
+            <h3 class="advantages-name">Красивая дорога</h3>
+            <div class="advantages-description-line2"></div>
+            <p class="advantages-text">
+              Ехать в Седону из Лас-Вегаса совсем не скучно!
+            </p>
           </li>
-          <li class="advantages-item">
-            <div class="advantages-description advantages-description--white">
-              <h3 class="advantages-name">Мало туристов</h3>
-              <div class="advantages-description-line2"></div>
-              <p class="advantages-text">
-                Большинство едет в Гранд Каньон и толпится там
-              </p>
-            </div>
+          <li class="advantages-item-small">
+            <h3 class="advantages-name">Мало туристов</h3>
+            <div class="advantages-description-line2"></div>
+            <p class="advantages-text">
+              Большинство едет в Гранд Каньон и толпится там
+            </p>
+
           </li>
           <li class="advantages-item">
             <img src="images/mountains.png" width="800" height="385" alt="горы">
@@ -121,7 +118,6 @@
         </div>
         <ul class="services-list">
           <li class="services-item">
-            <img class="services-item-img" src="images/house.svg" width="75" height="72" alt="дом">
             <p class="services-name">Жильё</p>
             <p class="services-text">
               Рекомендуем пожить
@@ -131,8 +127,7 @@
               всё как в кино!
             </p>
           </li>
-          <li class="services-item services-item--white">
-            <img class="services-item-img" src="images/hamburger.svg" width="75" height="72" alt="бургер">
+          <li class="services-item services-item--burger">
             <p class="services-name">еда</p>
             <p class="services-text">
               Всегда заказывайте
@@ -142,8 +137,7 @@
               вы не разочаруетесь!
             </p>
           </li>
-          <li class="services-item">
-            <img class="services-item-img" src="images/box.svg" width="75" height="72" alt="коробка">
+          <li class="services-item services-item--gift">
             <p class="services-name">Сувениры</p>
             <p class="services-text">
               Не только китайского,
@@ -185,19 +179,22 @@
     <footer class="footer">
       <ul class="footer-social">
         <li>
-          <a class="footer-social-item" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer"
+          <a class="footer-social-item-vk" href="https://vk.com/htmlacademy" target="_blank" rel="noopener noreferrer"
             aria-label="Переход на vk"></a>
         </li>
         <li>
-          <a class="footer-social-item-2" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer"
+          <a class="footer-social-item-tg" href="https://t.me/htmlacademy" target="_blank" rel="noopener noreferrer"
             aria-label="Переход на tg"></a>
         </li>
         <li>
-          <a class="footer-social-item-3" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
+          <a class="footer-social-item-youtube" href="https://www.youtube.com/user/htmlacademyru" target="_blank"
             rel="noopener noreferrer" aria-label="Переход на youtube"></a>
         </li>
       </ul>
-      <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12 </a>
+      <div class="footer-tel-wrapper">
+        <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12 </a>
+      </div>
+
       <a class="footer-logo" href="https://htmlacademy.ru/">
         <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black" />
@@ -249,12 +246,12 @@
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="search-form__input-wrapper">
           <label for="date-in">Дата Заезда:</label>
-          <input class="date-1" name="date-in" id="date-in" value="27 апреля 2020">
+          <input class="date-in" name="date-in" id="date-in" value="27 апреля 2020">
         </div>
 
         <div class="search-form__input-wrapper search-form__input-wrapper-color">
           <label for="date-out">Дата Выезда:</label>
-          <input class="date-1" name="date-out" id="date-out" value="1 сентября 2021">
+          <input class="date-in" name="date-out" id="date-out" value="1 сентября 2021">
         </div>
 
         <div class="counter-wrapper">
@@ -264,7 +261,7 @@
               <div class="sign-wrapper">
                 <button class="sign sign--minus" type="button">-</button>
               </div>
-              <input class="number-2" name="adult" id="adult" value="2">
+              <input class="guest-count" name="adult" id="adult" value="2">
               <div class="sign-wrapper">
                 <button class="sign" type="button">+</button>
               </div>
@@ -282,7 +279,7 @@
               <div class="sign-wrapper">
                 <button class="sign sign--minus" type="button">-</button>
               </div>
-              <input class="number-2" name="child" id="child" value="2">
+              <input class="guest-count" name="child" id="child" value="2">
               <div class="sign-wrapper">
                 <button class="sign" type="button">+</button>
               </div>
